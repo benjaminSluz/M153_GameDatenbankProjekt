@@ -20,7 +20,10 @@ VALUES
     ('Simulation'),
     ('Platformer'),
     ('Shooter'),
-    ('RPG')
+    ('RPG'),
+    ('Adventure'),
+    ('Rythm'),
+    ('Horror')
 GO
 INSERT into Creator
 VALUES
@@ -47,17 +50,26 @@ INSERT INTO Game
     ([name],beschreibung,dauer,published,empfohlen,fk_CreatorID,fk_PublisherID)
 VALUES
     ('Stelaris', 'Weltraum Strategie Spiel', 158.4, '05.09.2016', 1, 1, 1),
-    ('Hollow Knight', 'Ein Metroidvania Spiel in einer Käfer Welt', 200, '24.02.2017', 1, 3, 3),
-    ('Shovel Knight', 'Spiele einen Ritter mit einer grossen Schaufel', 25, '26.06.2014', 1, 4, 5),
+    ('Hollow Knight', 'Ein Metroidvania Spiel in einer Käfer Welt', 200, '02.24.2017', 1, 3, 3),
+    ('Shovel Knight', 'Spiele einen Ritter mit einer grossen Schaufel', 25, '06.26.2014', 1, 4, 5),
     ('Agatha Knife', 'Geschichte eines Kindes, hin- und hergerissen zwischen ihrer Liebe zum Fleischessen 
-    und ihrer Freundschaft mit Tieren.', 10, '27.04.2017', 1, 5, 2),
-    ('Beat Saber', 'VR Rhythmusspiel, Zerschneiden von Blöcken', 100.5, '21.05.2019', 0, 6, 6),
-    ('Stardew Valley', 'Ein entspannendes Farming Rollenspiel', 158.4, '05.09.2016', 1, 8, 4),
-    ('Five Nights at Freddys: Security Breach', 'Horrorspiel mit animatronischen Robotern', 40, '17.12.2021', 0, 7, 8),
-    ('Terraria', 'Minecraft aber 2D', 200, '16.05.2011', 0, 7, 1)
+    und ihrer Freundschaft mit Tieren.', 10, '04.27.2017', 1, 5, 2),
+    ('Beat Saber', 'VR Rhythmusspiel, Zerschneiden von Blöcken', 100.5, '05.21.2019', 0, 6, 6),
+    ('Stardew Valley', 'Ein entspannendes Farming Rollenspiel', 158.4, '09.05.2016', 1, 8, 4),
+    ('Five Nights at Freddys: Security Breach', 'Horrorspiel mit animatronischen Robotern', 40, '12.17.2021', 0, 7, 8),
+    ('Terraria', 'Minecraft aber 2D', 200, '05.16.2011', 0, 7, 1)
 GO
 INSERT INTO GameGenre
     (fk_gameID,fk_genreID)
 VALUES
-    (1, 2)
+    (1, 2),
+    (2, 3),
+    (3, 3),
+    (4, 6),
+    (5, 7),
+    (6, 2),
+    (6, 5),
+    (7, 8),
+    (8, 2),
+    (8, 6)
 

@@ -56,3 +56,22 @@ ALTER TABLE Game
 ADD 
     FOREIGN KEY (fk_CreatorID)     REFERENCES Creator (id),
     FOREIGN KEY (fk_PublisherID)    REFERENCES Publisher (id)
+GO
+
+--Creating Procedures
+use Game_Datenbank
+go
+
+Create  PROCEDURE getGamesbyGenre
+    @Genre VARCHAR
+AS
+BEGIN
+    SELECT *
+    From Game
+    WHERE id =
+    (SELECT fk_gameID
+    From GameGenre
+        JOIN Genre on fk_genreID =Genre.id
+    where Genre.bezeichnung= @Genre
+    )
+END

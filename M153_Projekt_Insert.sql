@@ -49,7 +49,7 @@ go
 INSERT INTO Game
     ([name],beschreibung,dauer,published,empfohlen,fk_CreatorID,fk_PublisherID)
 VALUES
-    ('Stelaris', 'Weltraum Strategie Spiel', 158.4, '05.09.2016', 1, 1, 1),
+    ('Stellaris', 'Weltraum Strategie Spiel', 158.4, '05.09.2016', 1, 1, 1),
     ('Hollow Knight', 'Ein Metroidvania Spiel in einer Käfer Welt', 200, '02.24.2017', 1, 3, 3),
     ('Shovel Knight', 'Spiele einen Ritter mit einer grossen Schaufel', 25, '06.26.2014', 1, 4, 5),
     ('Agatha Knife', 'Geschichte eines Kindes, hin- und hergerissen zwischen ihrer Liebe zum Fleischessen 

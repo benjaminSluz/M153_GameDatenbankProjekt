@@ -58,11 +58,11 @@ ADD
     FOREIGN KEY (fk_PublisherID)    REFERENCES Publisher (id)
 GO
 
---Creating Procedures
+--Create Procedures
 use Game_Datenbank
 go
 
-Create  PROCEDURE getGamesbyGenre
+Create PROCEDURE getGamesbyGenre
     @Genre VARCHAR
 AS
 BEGIN
@@ -71,7 +71,7 @@ BEGIN
     WHERE id =
     (SELECT fk_gameID
     From GameGenre
-        JOIN Genre on fk_genreID =Genre.id
-    where Genre.bezeichnung= @Genre
+        JOIN Genre on fk_genreID = Genre.id
+    where Genre.bezeichnung = @Genre
     )
 END

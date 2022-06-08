@@ -20,33 +20,41 @@ VALUES
     ('Simulation'),
     ('Platformer'),
     ('Shooter'),
-    ( 'RPG')
+    ('RPG')
 GO
 INSERT into Creator
 VALUES
     ('Paradox Develeopment Studio'),
     ('Maxis'),
-    (''),
-    (''),
-    (''),
-    (''),
-    (''),
-    ('')
+    ('Team Cherry'),
+    ('Yacht Club Games'),
+    ('Mango Protocol'),
+    ('Motion Twin'),
+    ('Re-Logic'),
+    ('ConcernedApe')
 INSERT into Publisher
 VALUES
     ('Paradox Interactive'),
     ('Maxis'),
-    (''),
-    (''),
-    (''),
-    (''),
-    (''),
-    ('')
+    ('Team Cherry'),
+    ('ConcernedApe'),
+    ('Curve Games'),
+    ('Beat Games'),
+    ('Matt Makes Games Inc.'),
+    ('ScottGames')
 go
 INSERT INTO Game
     ([name],beschreibung,dauer,published,empfohlen,fk_CreatorID,fk_PublisherID)
 VALUES
-    ('Stelaris', 'Weltraum Strategie spiel', 158.4, '05.09.2016', 1, 1, 1)
+    ('Stelaris', 'Weltraum Strategie Spiel', 158.4, '05.09.2016', true, 1, 1),
+    ('Hollow Knight', 'Ein Metroidvania Spiel in einer Käfer Welt', 200, '24.02.2017', true, 3, 3),
+    ('Shovel Knight', 'Spiele einen Ritter mit einer grossen Schaufel', 25, '26.06.2014', true, 4, 5),
+    ('Agatha Knife', 'Geschichte eines Kindes, hin- und hergerissen zwischen ihrer Liebe zum Fleischessen 
+    und ihrer Freundschaft mit Tieren.', 10, '27.04.2017', true, 5, 2),
+    ('Beat Saber', 'VR Rhythmusspiel, Zerschneiden von Blöcken', 100.5, '21.05.2019', false, 6, 6),
+    ('Stardew Valley', 'Ein entspannendes Farming Rollenspiel', 158.4, '05.09.2016', true, 8, 4),
+    ('Five Nights at Freddys: Security Breach', 'Horrorspiel mit animatronischen Robotern', 40, '17.12.2021', false, 7, 8),
+    ('Terraria', 'Minecraft aber 2D', 200, '16.05.2011', false, 7, 1)
 GO
 INSERT INTO GameGenre
     (fk_gameID,fk_genreID)
